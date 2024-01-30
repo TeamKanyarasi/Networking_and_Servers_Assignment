@@ -10,18 +10,28 @@ Deploy a website on localhost using either apache2 or nginx. Create a DNS name f
 3. Create your website:
    - Create your website files (HTML, CSS, JavaScript, images, etc.) and organize them in a directory. 
    - Here we have utilised Hostit directory with all the required website files inside it.
+![image](https://github.com/TeamKanyarasi/Herovired_devops_assignment/assets/139607786/cc222a1c-c622-4ee7-a30d-4c73b03402cd)
+
 4. Move your website to the Apache2 directory:
     - Move your website directory to the /var/www directory, which is the default directory for Apache2 to serve web pages.
     - You can find the “Hostit” website directory in the /wamp64/www directory of the wampserver folder.
+![image](https://github.com/TeamKanyarasi/Herovired_devops_assignment/assets/139607786/886db07b-16bd-4ad1-9aa6-3630e2dcc168)
+
 5. Access your website:
     - After moving your website to the Apache2 directory, you can access it by opening a web browser and going to http://localhost
-7. Create a DNS name:
+![image](https://github.com/TeamKanyarasi/Herovired_devops_assignment/assets/139607786/72a0fc39-9a4f-4c7b-ba68-a79614155396)
+
+6. Create a DNS name:
     - As per requirement, we need to create a DNS name for this website as ‘awesomeweb’.
     - DNS Name : DNS stands for Domain Name System. It is a system that translates human-readable domain names, such as example.com, into the numerical IP addresses that computers use to identify each other on the internet.
+![image](https://github.com/TeamKanyarasi/Herovired_devops_assignment/assets/139607786/8665cf40-c7fe-4b03-8159-a469917b00e7)
+
     - In order to change the DNS name of the website, we need to add ServerName ‘awesomeweb’ to the httpd-vhosts conf file in the wamp64/bin/apache/apache2.4.54.2/conf/extra folder.
-8. Access the website after DNS name change:
+7. Access the website after DNS name change:
     - After changing the DNS name in the above step, we need to restart all the servers in order to reflect our latest changes in the web server.
     - Enter http://awesomeweb in the browser page and you’ll find the application hosted on this particular DNS name.
+![image](https://github.com/TeamKanyarasi/Herovired_devops_assignment/assets/139607786/83faa206-6140-4f0f-901f-435b47bb9348)
+
 
 ## Question 2
 A website can have many subdomains and different services are running on them. A Python script to check the status of the subdomains which are up or down. The script should automatically check the status every min and should update it in tabular format on the screen
